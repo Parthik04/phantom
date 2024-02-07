@@ -1,5 +1,7 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
 
 /* Variable */
 :root {
@@ -12,6 +14,154 @@
     --transition: all .4s cubic-bezier(.165, .84, .44, 1);
     --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px; /* Adjust padding as per your existing button */
+    color: #425F57;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn:hover {
+    background: #6ea696;
+    color: #050801;
+    box-shadow: 0 0 5px #425F57,
+                0 0 25px #425F57,
+                0 0 50px #425F57,
+                0 0 200px #425F57;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.btn span {
+    position: absolute;
+    display: block;
+}
+
+.btn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #425F57);
+    animation: animate1 1s linear infinite;
+}
+
+/* --------- */
+.navbar-brand, .btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px; /* Adjust padding as needed */
+    margin-right: 30px; /* Adjust margin as needed */
+    color: #425F57;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px; /* Adjust letter spacing as needed */
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.navbar-brand:hover, .btn:hover {
+    background: #425F57;
+    color: #050801;
+    box-shadow: 0 0 5px #425F57,
+                0 0 15px #425F57, /* Adjust the glow effect */
+                0 0 30px #425F57, /* Adjust the glow effect */
+                0 0 100px #425F57; /* Adjust the glow effect */
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(238, 236, 236, 0.333));
+}
+
+.navbar-brand span, .btn span {
+    position: absolute;
+    display: block;
+}
+
+.navbar-brand span:nth-child(1), .btn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #425F57);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.navbar-brand span:nth-child(2), .btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #425F57);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.navbar-brand span:nth-child(3), .btn span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #425F57);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.navbar-brand span:nth-child(4), .btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #425F57);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+
+/* ------------------ */
 
 body {
     font-family: var(--f-main);
