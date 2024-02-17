@@ -1,6 +1,27 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+.clock {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    color: #425F57;
+    text-align: center;
+    padding: 5px 10px;
+    border: none; /* Removed border */
+    border-radius: 5px;
+    width: fit-content;
+    margin: 60px auto 0;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(to right, #cedfda, #6ea696); /* Added gradient background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hr-line {
+    border: none;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #425F57, rgba(0, 0, 0, 0));
+}
 
 
 /* Variable */
