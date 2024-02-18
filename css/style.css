@@ -439,6 +439,15 @@ img {
 
 .skill img {
     opacity: 0.7;
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust image size for tablets (landscape and portrait) and mobile devices */
+@media (max-width: 1024px) {
+    .skill img {
+        max-width: 80%; /* Set maximum width for tablets and mobile devices */
+    }
 }
 
 /* Education and Experience */
