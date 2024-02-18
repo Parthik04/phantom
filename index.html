@@ -27,7 +27,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="https://www.linkedin.com/in/parthik-patel-830865291/">Phantom😎</a>
+                <!-- <a class="navbar-brand" href="https://www.linkedin.com/in/parthik-patel-830865291/">Phantom😎</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -389,3 +389,40 @@
 </body>
 
 </html>
+
+
+
+
+<!-- 
+/* ------
+/* -----------nav bar new */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px; /* Adjust the width as needed */
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1); /* Very transparent white background */
+        z-index: 1000; /* Ensure the navbar is above other content */
+        transform: translateX(-200px); /* Initially hide the navbar off-screen */
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0); /* Show the navbar when the collapse is active */
+    }
+
+    .navbar-collapse .nav-link {
+        color: #425F57; /* Text color for links */
+        padding: 10px 15px; /* Adjust padding as needed */
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect */
+    }
+
+    .navbar-collapse .nav-link:hover {
+        background-color: #6ea696; /* Background color on hover */
+        color: #050801; 
+    }
+} -->

@@ -268,44 +268,31 @@ img {
 
 
 
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 16px;
-        padding-left: 16px;
-    }
-}
-/* -----------nav bar new */
-@media (max-width: 991px) {
-    .navbar-collapse {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 200px; /* Adjust the width as needed */
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.1); /* Very transparent white background */
-        z-index: 1000; /* Ensure the navbar is above other content */
-        transform: translateX(-200px); /* Initially hide the navbar off-screen */
-        transition: transform 0.3s ease; /* Add a smooth transition effect */
-    }
 
-    .navbar-collapse.show {
-        transform: translateX(0); /* Show the navbar when the collapse is active */
+    @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 16px;
+            padding-left: 16px;
+        }
     }
-
-    .navbar-collapse .nav-link {
-        color: #425F57; /* Text color for links */
-        padding: 10px 15px; /* Adjust padding as needed */
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect */
+    @media (max-width: 991px) {
+        /* Style for mobile devices */
+        .navbar-toggler {
+            background: none;
+            border: none;
+            color: #425F57;
+            font-weight: 500;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    
+        .navbar-toggler:focus,
+        .navbar-toggler:hover {
+            background-color: #6ea696; /* Background color on hover */
+            color: #050801; /* Text color on hover */
+        }
     }
-
-    .navbar-collapse .nav-link:hover {
-        background-color: #6ea696; /* Background color on hover */
-        color: #050801; /* Text color on hover */
-    }
-}
-
+    
 
 
 .navbar .navbar-nav .nav-link {
